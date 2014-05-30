@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+{% for news_item in news_all %}
+   <div>
+        <p>Tytuł: <i>{{ news_item.title }}</i> Autor: <b>{{ news_item.user.email }}</b></p>
+       <p>{{ news_item.text }}</p>
+       <br />
+       <a href="#" >Komentarze</a>
+   </div>
+{% endfor %}
+
+</body>
+</html>
